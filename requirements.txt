@@ -1,4 +1,4 @@
-echo "streamlit
-requests
-beautifulsoup4
-streamlit-option-menu" > requirements.txt
+streamlit==1.10.0
+requests==2.25.1
+beautifulsoup4==4.9.3
+streamlit-option-menu==0.3.2
