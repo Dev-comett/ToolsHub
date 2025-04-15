@@ -158,7 +158,7 @@ if selected == "Home😴":
     with col1:
         st.markdown("""
             <div style='padding: 1rem; background-color: #1c1c1c; border-radius: 15px; text-align: center;'>
-                <img src='https://tools-hub-logo.s3.amazonaws.com/toolshub.png' width='300' style='margin-bottom: 20px;' />
+                <img src='banner.png' width='300' style='margin-bottom: 20px;' />
                 <h2 style='color: #ff9900;'>Welcome to ToolsHub</h2>
                 <p style='color:#ccc;'>Your all-in-one smart utility dashboard for web, docs & AI tools.</p>
             </div>
