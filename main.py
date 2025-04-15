@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import streamlit.components.v1 as components
 import streamlit as st
+import os
 # --- Config ---
 st.set_page_config(page_title="ToolsHub", layout="wide", page_icon="😎")
 
@@ -12,6 +13,10 @@ TOMORROW_API_KEY = st.secrets["TOMORROW_API_KEY"]
 NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
 SERP_API_KEY = st.secrets["SERP_API_KEY"]
 
+
+TOMORROW_API_KEY = os.environ.get("TOMORROW_API_KEY")
+NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
+SERP_API_KEY = os.environ.get("SERP_API_KEY")
 
 
 st.markdown("""
