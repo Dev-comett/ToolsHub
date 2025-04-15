@@ -156,12 +156,18 @@ if selected == "Home😴":
     col1, col2 = st.columns([2, 1])
     
     with col1:
+        # Center the image and make it large
         st.markdown("""
             <div style='padding: 1rem; background-color: #1c1c1c; border-radius: 15px; text-align: center;'>
-                <img src='banner.png' width='300' style='margin-bottom: 20px;' />
-                <h2 style='color: #ff9900;'>Welcome to ToolsHub</h2>
-                <p style='color:#ccc;'>Your all-in-one smart utility dashboard for web, docs & AI tools.</p>
-            </div>
+        """, unsafe_allow_html=True)
+
+        # Use st.image with a large width to make the image big enough
+        st.image("banner.png", width=550, use_column_width=False)  # Adjust width as needed for Full HD image
+
+        st.markdown("""
+            <h2 style='color: #ff9900;'>Welcome to ToolsHub</h2>
+            <p style='color:#ccc;'>Your all-in-one smart utility dashboard for web, docs & AI tools.</p>
+        </div>
         """, unsafe_allow_html=True)
 
     with col2:
@@ -187,6 +193,8 @@ if selected == "Home😴":
                     st.caption(article.get("description", "No description available."))
             except Exception as e:
                 st.warning("News API error.")
+
+
 
 # --- Web Scraper ---
 elif selected == "Web Scraper🔎":
