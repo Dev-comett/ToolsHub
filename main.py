@@ -162,7 +162,7 @@ if selected == "Home😴":
         """, unsafe_allow_html=True)
 
         # Use st.image with a large width to make the image big enough
-        st.image("banner.png", width=550, use_column_width=False)  # Adjust width as needed for Full HD image
+        st.image("banner.png", width=550, use_container_width=True)  # Adjust width as needed for Full HD image
 
         st.markdown("""
             <h2 style='color: #ff9900;'>Welcome to ToolsHub</h2>
