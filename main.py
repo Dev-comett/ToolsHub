@@ -6,7 +6,16 @@ import re
 import streamlit.components.v1 as components
 import streamlit as st
 # --- Config ---
-st.set_page_config(page_title="ToolsHub", layout="wide", page_icon="😎")
+st.set_page_config(
+    page_title="ToolsApp — by Devansh Mishra",
+    page_icon="🛠",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': "Built by Devansh Mishra. Hire me: cal.com/devansh"
+    }
+)
+
 
 TOMORROW_API_KEY = st.secrets["TOMORROW_API_KEY"]
 NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
