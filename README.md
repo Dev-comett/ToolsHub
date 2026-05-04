@@ -63,7 +63,7 @@ You can add screenshots or a GIF here showing the UI.
 📜 License
 This project is free to use and open-sourced under the MIT License.
 
-✨ Made with ❤️ by Dev | Enhanced by ChatGPT ✨
+✨ Made with ❤️ by Dev 
 
 
 ---
